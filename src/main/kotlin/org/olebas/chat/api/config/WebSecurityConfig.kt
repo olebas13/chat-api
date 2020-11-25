@@ -1,5 +1,8 @@
 package org.olebas.chat.api.config
 
+import org.olebas.chat.api.filter.JWTAuthenticationFilter
+import org.olebas.chat.api.filter.JWTLoginFilter
+import org.olebas.chat.api.service.AppUserDetailsService
 import org.springframework.context.annotation.Configuration
 import org.springframework.http.HttpMethod
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder
