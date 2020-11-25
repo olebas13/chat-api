@@ -14,7 +14,7 @@ interface ConversationService {
 
     fun retrieveThread(conversationId: Long): Conversation
 
-    fun listUserConversations(userId: Long): List<Conversation>
+    fun listUserConversations(userId: Long): ArrayList<Conversation>
 
     fun nameSecondParty(conversation: Conversation, userId: Long): String
 

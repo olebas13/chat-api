@@ -41,7 +41,7 @@ class ConversationServiceImpl(
         throw ConversationIdInvalidException("Invalid conversation id '$conversationId'")
     }
 
-    override fun listUserConversations(userId: Long): List<Conversation> {
+    override fun listUserConversations(userId: Long): ArrayList<Conversation> {
         val conversationList: ArrayList<Conversation> = ArrayList()
         conversationList.addAll(repository.findBySenderId(userId))
         conversationList.addAll(repository.findByRecipientId(userId))

@@ -23,7 +23,7 @@ class ConversationAssembler(
                 conversationMessages)
     }
 
-    fun toConversationVOList(conversations: ArrayList<Conversation>, userId: Long): ConversationListVO {
+    fun toConversationListVO(conversations: ArrayList<Conversation>, userId: Long): ConversationListVO {
         val conversationVOList = conversations.map {
             toConversationVO(it, userId)
         }
